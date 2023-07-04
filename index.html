@@ -1,0 +1,149 @@
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+ 
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search The City" name="Search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</body>
+</html> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 25 May
+                </div>
+
+                <div class="others" id="current-weather-items">
+                    
+                    
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                <div id="country" class="country">IN</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
